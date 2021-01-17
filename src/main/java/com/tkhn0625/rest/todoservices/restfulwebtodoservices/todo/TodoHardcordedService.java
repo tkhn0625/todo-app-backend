@@ -1,7 +1,5 @@
 package com.tkhn0625.rest.todoservices.restfulwebtodoservices.todo;
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -12,7 +10,7 @@ import java.util.List;
 public class TodoHardcordedService {
 
     private static List<Todo> todos = new ArrayList<>();
-    private static int idCounter = 0;
+    private static long idCounter = 0;
 
     static {
         todos.add(new Todo(++idCounter,"tkhn0625","description of tkhn0625", new Date() ,false));
